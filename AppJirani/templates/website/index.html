@@ -1,0 +1,440 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jirani -- Kenya</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'website/assets/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'website/css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'website/css/mystyle.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'website/assets/img/icons8-leaf-64.png' %}" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Jirani
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+
+    <header class="masthead text-center text-white  background-image"
+        style="background-image: url('{% static 'website/assets/img/pexels-monstera-production-6999244 (1).jpg' %}')">
+
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">Streamline Your <br><small>Business's</small> <br> Logistics </h1>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" id="installButton" href="https://jirani.site">Visit
+                    jirani.site</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Services</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x text-primary"></i>
+                        <i class="fas fa-truck fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">{{services.Service_name1}}</h4>
+                    <p class="text-muted">{{services.description1}}</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x text-primary"></i>
+                        <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+
+                    <h4 class="my-3">{{services.Service_name2}}</h4>
+                    <p class="text-muted">{{services.description2}}</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+
+                    <h4 class="my-3">{{services.Service_name3}}</h4>
+                    <p class="text-muted">{{services.description3}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="{% static 'website/assets/img/about/1.jpg' %}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>{{about.Years_1}}</h4>
+                            <h4 class="subheading">{{about.Headline1}}</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">{{about.about1}}</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="{% static 'website/assets/img/about/2.jpg' %}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>{{about.Years_2}}</h4>
+                            <h4 class="subheading">{{about.Headline2}}</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">{{about.about2}}</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="{% static 'website/assets/img/about/3.jpg' %}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>{{about.Years_3}}</h4>
+                            <h4 class="subheading">{{about.Headline3}}</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">{{about.about3}}</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="{% static 'website/assets/img/about/4.jpg' %}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>{{about.Years_4}}</h4>
+                            <h4 class="subheading">{{about.Headline4}}</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">{{about.about4}}</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{{for_those_who.image1.url}}"
+                            alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">{{for_those_who.title_1}}</h2>
+                        <p>{{for_those_who.description1}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 2-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{{for_those_who.image2.url}}"
+                            alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">{{for_those_who.title_2}}</h2>
+                        <p>{{for_those_who.description2}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content section 3-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{{for_those_who.image3.url}}"
+                            alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">{{for_those_who.title_3}}</h2>
+                        <p>{{for_those_who.description3}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials-->
+    <section class="testimonials text-center bg-light" id="testimonials">
+        <div class="container">
+            <h2 class="mb-5">What businesses are saying...</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="{{testimonials.image1.url}}" alt="..." />
+                        <h5>{{testimonials.name_1}}</h5>
+                        <p class="font-weight-light mb-0">{{testimonials.description1}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="{{testimonials.image2.url}}" alt="..." />
+                        <h5>{{testimonials.name_2}}</h5>
+                        <p class="font-weight-light mb-0">{{testimonials.description2}}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="{{testimonials.image3.url}}" alt="..." />
+                        <h5>{{testimonials.name_3}}</h5>
+                        <p class="font-weight-light mb-0">{{testimonials.description3}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{% static 'website/assets/img/team/1.jpg' %}"
+                            alt="..." />
+                        <h4>{{amazing_team.name1}}</h4>
+                        <p class="text-muted">{{amazing_team.role1}}</p>
+                        <a class="btn btn-dark btn-social mx-2" href="{{amazing_team.twitter1}}"
+                            aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="{{amazing_team.facebook1}}"
+                            aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="{{amazing_team.linkeldin}}"
+                            aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{% static 'website/assets/img/team/2.jpg' %}"
+                            alt="..." />
+                        <h4>Diana Petersen</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"
+                            aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"
+                            aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="{% static 'website/assets/img/team/3.jpg' %}"
+                            alt="..." />
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" method="POST">
+                {% csrf_token %}
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" required name="name" type="text"
+                                placeholder="Your Name *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" required name="email" type="email"
+                                placeholder="Your Email *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" required name="phone" type="tel"
+                                placeholder="Your Phone *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" required name="message"
+                                placeholder="Your Message *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Submit</button>
+
+                <!-- Submit Button-->
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; {{ copyright.text }} {{ copyright.date }}</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="{{our_socials.twitter}}" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="{{our_socials.facebook}}" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="{{our_socials.linkedin}}" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a id="privacy-policy-link" class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a id="terms-use-link" class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-bottom" style="height: 75vh;" tabindex="-1" id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel" style="text-align: center;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Privacy Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small" style="height: 60%;">
+            <p>{{privacy_policy.policy}}</p>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom" style="height: 75vh;" tabindex="-1" id="offcanvasBottom2"
+        aria-labelledby="offcanvasBottomLabel" style="text-align: center;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Terms of Use</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small" style="height: 60%;">
+            <p>{{terms_and_conditions.terms}}</p>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script>
+        // Get the Privacy Policy link element
+        const privacyPolicyLink = document.getElementById('privacy-policy-link');
+
+        // Add a click event listener to the Privacy Policy link
+        privacyPolicyLink.addEventListener('click', function (event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+
+            // Toggle the offcanvas
+            const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasBottom'));
+            offcanvas.toggle();
+        });
+    </script>
+
+    <script>
+        // Get the Privacy Policy link element
+        const termsofuselink = document.getElementById('terms-use-link');
+
+        // Add a click event listener to the Privacy Policy link
+        termsofuselink.addEventListener('click', function (event) {
+            // Prevent the default behavior of the link
+            event.preventDefault();
+
+            // Toggle the offcanvas
+            const offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasBottom2'));
+            offcanvas.toggle();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'website/js/scripts.js' %}"></script>
+</body>
+
+</html>
